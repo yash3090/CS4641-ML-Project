@@ -49,8 +49,8 @@ st.write(potential_results_and_discussion)
 st.header('References')
 st.markdown(
 """
-- [IEEE Citation 1](google.com)
-- [IEEE Citation 2](google.com)
+- Yoonchang Han, Jaehun Kim, and Kyogu Lee, “Deep convolutional neural networks for predominant instrument recognition in polyphonic music,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 25, no. 1, pp. 208–221, 2016.
+-  Peter Li, Jiyuan Qian, and Tian Wang, “Automatic instrument recognition in polyphonic music using convolutional neural networks,” arXiv preprint arXiv:1511.05520, 2015.
 """
 )
 
