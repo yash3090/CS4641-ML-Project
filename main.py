@@ -23,10 +23,11 @@ st.write(problem_definition)
 #   Students are encouraged to use existing packages and libraries (i.e. scikit-learn) instead of coding the algorithms from scratch.
 st.header('Methods')
 methods = """
-We will be using the NSynth library and its included feature set in order to train a convolutional neural network. We decided upon a CNNs by reading different research papers that extract the instruments used from polyphonic audio files and found this to be the most efficient way for our application.  This particular library has encoded its audio files to the format required.
+We will be using the NSynth library and its included feature set in order to train a convolutional neural network. We decided upon a CNNs by reading different research papers that extract the instruments used from polyphonic audio files and found this to be the most efficient way for our application. 
+This particular library has encoded its audio files to the format required.
 For the ML framework, we will be using PyTorch for our multi-class classification model.
-We are beginning our work with the creation of a supervised model which will use the ground truths of the dataset to train the convolutional neural network.
-If we make signficant progress on the supervised model, we will create an unsupervised model which will use the features extracted from the audio files optimized via a silloutte coefficient to measure the quality of the clusters.
+We are beginning with the creation of a supervised model which will use the ground truths to train the convolutional neural network.
+If we make signficant progress on the supervised model, we will create an unsupervised model which will use extracted features to define clusters, optimized via a silloutte coefficient.
 Data visualization will be done using the matplotlib library and the built-in functionality of Streamlit.
 Our model will be trained on the NSynth dataset containing over 300,000 samples and organized around the instrument being played.
 We will first preprocess the data we have from NSynth for our CNN. We will then create the model. After model creation we will train the model and test it on the test set. Using the information from test set results we will tune our hyperparmaters and extract the most informative features. The last two steps will be repeated to fine tune our model and achieve higher accuracies.
@@ -41,8 +42,8 @@ st.write(methods)
 st.header('Potential Results and Discussion')
 potential_results_and_discussion = """
 We will be looking for the success rate for which the model can identify the instrument being played in a given audio file. 
-This testing will be done on a reserved portion of the dataset that the model has not been trained on.
-We are hoping to achieve a success rate of 95% or higher.
+This testing will be done on a reserved portion of the dataset, and we are hoping to achieve a success rate of 95% or higher.
+When applying the model to real world scenarios, we will be looking on how the model can extract the music from any background noise.
 """
 st.write(potential_results_and_discussion)
 
