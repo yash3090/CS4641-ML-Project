@@ -25,8 +25,10 @@ st.header('Methods')
 methods = """
 We will be using the Librosa library to extract features from the audio files. Significant experimentation will have to take place to ensure that the data is in the best form to be trained upon.
 For the ML framework, we will be using PyTorch for our multi-class classification model.
-Once we have a model, we will be using the silhouette coefficient if unsupervised and Adam optimization based on ground truths if supervised.
+We are beginning our work with the creation of a supervised model which will use the ground truths of the dataset to train the convolutional neural net.
+If we make signficant progress on the supervised model, we will create an unsupervised model which will use the features extracted from the audio files optimized via a silloutte coefficient to measure the quality of the clusters.
 Data visualization will be done using the matplotlib library and the built-in functionality of Streamlit.
+Our model will be trained on the NSynth dataset containing over 300,000 samples and organized around the instrument being played.
 """
 #Librosa: https://librosa.org/
 #PyTorch: https://www.learnpytorch.io/02_pytorch_classification/
