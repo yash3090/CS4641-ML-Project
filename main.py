@@ -8,7 +8,7 @@ st.write('By Project Group 13: Ashley Cain, Ethan Haarer, Keshav Jagannath, Matt
 #   A quick introduction of your topic and mostly literature review of what has been done in this area. 
 #   You can briefly explain your dataset and its features here too.
 st.header('Introduction')
-introduction = 'The goal of this project is to identify the instrument being played from a given snippet of audio. We will be using an established dataset of audio files of various instruments known as NSynth. We will be using machine learning to train a convolution neural network model to identify the instrument being played in a given audio file.  We will be using libraries such as scikit-learn library to train and test our model. We will be using the matplotlib library to visualize our data.'
+introduction = 'The goal of this project is to identify the instrument being played from a given snippet of audio. Audio classification is an increasingly popular subfield of machine learning that will be an intermediary towards other musical applications. We will be using an established dataset of audio files such as NSynth to train a convolutional neural network to fulfill this goal. We will be using libraries such as scikit-learn library to train and test our model, as well as Librosa to extract features from the dataset if we need to. We will be using the matplotlib library to visualize our data.'
 st.write(introduction)
 
 # Problem definition: 
