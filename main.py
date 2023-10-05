@@ -14,7 +14,7 @@ st.write(introduction)
 # Problem definition: 
 #   Why there is a problem here or what is the motivation of the project?
 st.header('Problem Definition')
-problem_definition = 'AI classificatioin in the audio realm is a relatively new research field compared to applications such as computer vision. Single instrument classification is an intermediary towards a host of other applications. Companies like "Izotope" are currently interested in developing mixing and mastering virtual assistants based on the ability to classify waveforms into buckets of instrument catagories. It would also be useful for individuals to classify instrument details from rehearsal recordings, auditions, or performances for further review.'
+problem_definition = 'AI classification in the audio realm is a relatively new research field compared to applications such as computer vision. Single instrument classification is an intermediary towards a host of other applications. Companies like "Izotope" are currently interested in developing mixing and mastering virtual assistants based on the ability to classify waveforms into buckets of instrument catagories. It would also be useful for individuals to classify instrument details from rehearsal recordings, auditions, or performances for further review.'
 st.write(problem_definition)
 
 # Methods: 
