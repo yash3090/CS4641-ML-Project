@@ -29,6 +29,7 @@ We are beginning our work with the creation of a supervised model which will use
 If we make signficant progress on the supervised model, we will create an unsupervised model which will use the features extracted from the audio files optimized via a silloutte coefficient to measure the quality of the clusters.
 Data visualization will be done using the matplotlib library and the built-in functionality of Streamlit.
 Our model will be trained on the NSynth dataset containing over 300,000 samples and organized around the instrument being played.
+We will first preprocess the data we have from NSynth for our CNN. We will then create the model. After model creation we will train the model and test it on the test set. Using the information from test set results we will tune our hyperparmaters and extract the most informative features. The last two steps will be repeated to fine tune our model and achieve higher accuracies.
 """
 #Librosa: https://librosa.org/
 #PyTorch: https://www.learnpytorch.io/02_pytorch_classification/
@@ -62,6 +63,11 @@ st.header('Contribution Table')
 
 # A checkpoint to make sure you are working on a proper machine learning related project. You are required to have your dataset ready when you submit your proposal. You can change dataset later. However, you are required to provide some reasonings why you need to change the dataset (i.e. dataset is not large enough because it does not provide us a good accuracy comparing to other dataset; we provided accuracy comparison between these two datasets). The reasonings can be added as a section to your future project reports such as midterm report.
 st.header('Checkpoint')
+checkpoint = """
+  This is a proper machine learning project because we are using ML libraries and framework such as Librosa and PyTorch in order to create a multi-class classification model, which is a supervised model.
+  We will be extracting features of the from the audio files to train the models on test data. Then we will train a convolutional neural network and evaluate the success rate in a quantifiable way in order to evaluate success of the model. These are all key characteristics of a machine learning project. 
+"""
+st.write(checkpoint)
 
 # Your group needs to submit a presentation of your proposal. Please provide us a public link which includes a 3 minutes recorded video. I found that OBS Studio and GT subscribed Kaltura are good tools to record your screen. Please make your visuals are clearly visible in your video presentation.
 # 3 MINUTE is a hard stop. We will NOT accept submissions which are 3 minutes and one second or above. Conveying the message easily while being concise is not easy and it is a great soft skill for any stage of your life, especially your work life.
