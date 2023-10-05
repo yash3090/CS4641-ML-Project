@@ -61,7 +61,7 @@ st.header('Timeline')
 st.image("gantchart.png", caption='Gantt Chart', use_column_width=True)
 # A contribution table with all group members’ names that explicitly provides the contribution of each member in preparing the project task. This part does NOT count towards word limit.
 st.header('Contribution Table')
-
+st.image("contributiontable.png", caption='Contribution Table', use_column_width=True)
 # A checkpoint to make sure you are working on a proper machine learning related project. You are required to have your dataset ready when you submit your proposal. You can change dataset later. However, you are required to provide some reasonings why you need to change the dataset (i.e. dataset is not large enough because it does not provide us a good accuracy comparing to other dataset; we provided accuracy comparison between these two datasets). The reasonings can be added as a section to your future project reports such as midterm report.
 st.header('Checkpoint')
 checkpoint = """
