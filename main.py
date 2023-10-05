@@ -61,9 +61,13 @@ st.markdown(
 # Add proposed timeline from start to finish and list each project members’ responsibilities. Fall and Spring semester sample Gantt Chart. This part does NOT count towards word limit.
 st.header('Timeline')
 st.image("gantchart.png", caption='Gantt Chart', use_column_width=True)
+st.markdown('[Timeline Link](https://docs.google.com/spreadsheets/d/14jc8INAYUF7UpRMh5FNqtHCsqTxM9mZr/edit?usp=sharing&ouid=106392410827909927826&rtpof=true&sd=true)')
+
 # A contribution table with all group members’ names that explicitly provides the contribution of each member in preparing the project task. This part does NOT count towards word limit.
 st.header('Contribution Table')
 st.image("contributiontable.png", caption='Contribution Table', use_column_width=True)
+st.markdown('[Contribution Link](https://docs.google.com/spreadsheets/d/1ErVX2eNvhlxeY7ajNCB5KscghvE8iW3X/edit?usp=sharing&ouid=106392410827909927826&rtpof=true&sd=true)')
+
 # A checkpoint to make sure you are working on a proper machine learning related project. You are required to have your dataset ready when you submit your proposal. You can change dataset later. However, you are required to provide some reasonings why you need to change the dataset (i.e. dataset is not large enough because it does not provide us a good accuracy comparing to other dataset; we provided accuracy comparison between these two datasets). The reasonings can be added as a section to your future project reports such as midterm report.
 st.header('Checkpoint')
 checkpoint = """
@@ -79,5 +83,5 @@ st.video('https://youtu.be/HjY5fkp9aiw')
 st.markdown('[Video Link](https://youtu.be/HjY5fkp9aiw)')
 st.markdown('[Slides Link](https://docs.google.com/presentation/d/1jdO9zwQNaCHwXmeDMgxfeWpnSxTNvJAb6rdTWqieLiE/edit?usp=sharing)')
 
-st.write('Graded Word Count: ' + str(len((introduction + problem_definition + methods + potential_results_and_discussion).split())))
+# st.write('Graded Word Count: ' + str(len((introduction + problem_definition + methods + potential_results_and_discussion).split())))
 
