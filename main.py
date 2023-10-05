@@ -23,8 +23,8 @@ st.write(problem_definition)
 #   Students are encouraged to use existing packages and libraries (i.e. scikit-learn) instead of coding the algorithms from scratch.
 st.header('Methods')
 methods = """
-We will be using the NSynth library and its included feature set in order to train a convolutional neural network. 
-We decided upon CNNs by reading different research papers that extract the instruments used from polyphonic audio files and found this to be the most efficient way for our application. 
+We are using the NSynth library and its included feature set in order to train a convolutional neural network. 
+We decided upon CNNs by reading different research papers that extract the instruments used from polyphonic audio files and found this as the most efficient way for our application. 
 This particular library has encoded its audio files to the format required. 
 For the ML framework, we will be using PyTorch for our multi-class classification model. 
 We are beginning with the creation of a supervised model which will use the ground truths to train the convolutional neural network. 
