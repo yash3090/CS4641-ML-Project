@@ -62,6 +62,11 @@ st.header('Contribution Table')
 
 # A checkpoint to make sure you are working on a proper machine learning related project. You are required to have your dataset ready when you submit your proposal. You can change dataset later. However, you are required to provide some reasonings why you need to change the dataset (i.e. dataset is not large enough because it does not provide us a good accuracy comparing to other dataset; we provided accuracy comparison between these two datasets). The reasonings can be added as a section to your future project reports such as midterm report.
 st.header('Checkpoint')
+checkpoint = """
+  This is a proper machine learning project because we are using ML libraries and framework such as Librosa and PyTorch in order to create a multi-class classification model, which is a supervised model.
+  We will be extracting features of the from the audio files to train the models on test data. Then we will train a convolutional neural network and evaluate the success rate in a quantifiable way in order to evaluate success of the model. These are all key characteristics of a machine learning project. 
+"""
+st.write(checkpoint)
 
 # Your group needs to submit a presentation of your proposal. Please provide us a public link which includes a 3 minutes recorded video. I found that OBS Studio and GT subscribed Kaltura are good tools to record your screen. Please make your visuals are clearly visible in your video presentation.
 # 3 MINUTE is a hard stop. We will NOT accept submissions which are 3 minutes and one second or above. Conveying the message easily while being concise is not easy and it is a great soft skill for any stage of your life, especially your work life.
