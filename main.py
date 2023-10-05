@@ -29,6 +29,7 @@ We are beginning our work with the creation of a supervised model which will use
 If we make signficant progress on the supervised model, we will create an unsupervised model which will use the features extracted from the audio files optimized via a silloutte coefficient to measure the quality of the clusters.
 Data visualization will be done using the matplotlib library and the built-in functionality of Streamlit.
 Our model will be trained on the NSynth dataset containing over 300,000 samples and organized around the instrument being played.
+We will first preprocess the data we have from NSynth for our CNN. We will then create the model. After model creation we will train the model and test it on the test set. Using the information from test set results we will tune our hyperparmaters and extract the most informative features. The last two steps will be repeated to fine tune our model and achieve higher accuracies.
 """
 #Librosa: https://librosa.org/
 #PyTorch: https://www.learnpytorch.io/02_pytorch_classification/
