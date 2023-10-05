@@ -57,7 +57,7 @@ st.markdown(
 
 # Add proposed timeline from start to finish and list each project members’ responsibilities. Fall and Spring semester sample Gantt Chart. This part does NOT count towards word limit.
 st.header('Timeline')
-
+st.image("gantchart.png", caption='Gantt Chart', use_column_width=True)
 # A contribution table with all group members’ names that explicitly provides the contribution of each member in preparing the project task. This part does NOT count towards word limit.
 st.header('Contribution Table')
 
