@@ -8,13 +8,13 @@ st.write('By Project Group 13: Ashley Cain, Ethan Haarer, Keshav Jagannath, Matt
 #   A quick introduction of your topic and mostly literature review of what has been done in this area. 
 #   You can briefly explain your dataset and its features here too.
 st.header('Introduction')
-introduction = 'The goal of this project is to identify the instrument being played in a given audio file. We will be using a dataset of audio files of various instruments being played. We will be using machine learning to train a model to identify the instrument being played in a given audio file. We will be using the Librosa library to extract features from the audio files. We will be using the scikit-learn library to train and test our model. We will be using the matplotlib library to visualize our data.'
+introduction = 'The goal of this project is to identify the instrument being played from a given snippet of audio. We will be using an established dataset of audio files of various instruments known as NSynth. We will be using machine learning to train a convolution neural network model to identify the instrument being played in a given audio file.  We will be using libraries such as scikit-learn library to train and test our model. We will be using the matplotlib library to visualize our data.'
 st.write(introduction)
 
 # Problem definition: 
 #   Why there is a problem here or what is the motivation of the project?
 st.header('Problem Definition')
-problem_definition = 'The motivation for this project is to be able to identify the instrument being played in a given audio file. This could be used to identify the instrument being played in a song. This could also be used to identify the instrument being played in a recording of a live performance. This could also be used to identify the instrument being played in a recording of a practice session. This could also be used to identify the instrument being played in a recording of a lesson. This could also be used to identify the instrument being played in a recording of a rehearsal.'
+problem_definition = 'There are a host of applications in the music industry related classifying audio. Companies like "Izotope" are currently interested in developing mixing and mastering virtual assistants based on the ability to classify waveforms into buckets of instrument catagories. It would also be useful for individuals to classify instrument details from rehearsal recordings, auditions, or performances for further review. AI classification for images and computer vision applications have advanced much farther than applications for audio. The motivation for this project is to be able to identify the instrument being played in a given audio file. This could be used to identify the instrument being played in a song. This could also be used to identify the instrument being played in a recording of a live performance. This could also be used to identify the instrument being played in a recording of a practice session. This could also be used to identify the instrument being played in a recording of a lesson. This could also be used to identify the instrument being played in a recording of a rehearsal.'
 st.write(problem_definition)
 
 # Methods: 
@@ -23,9 +23,9 @@ st.write(problem_definition)
 #   Students are encouraged to use existing packages and libraries (i.e. scikit-learn) instead of coding the algorithms from scratch.
 st.header('Methods')
 methods = """
-We will be using the Librosa library to extract features from the audio files. Significant experimentation will have to take place to ensure that the data is in the best form to be trained upon.
+We will be using the NSynth library and its included feature set in order to train a convolutional neural network. This particular library has encoded its audio files to the format required.
 For the ML framework, we will be using PyTorch for our multi-class classification model.
-We are beginning our work with the creation of a supervised model which will use the ground truths of the dataset to train the convolutional neural net.
+We are beginning our work with the creation of a supervised model which will use the ground truths of the dataset to train the convolutional neural network.
 If we make signficant progress on the supervised model, we will create an unsupervised model which will use the features extracted from the audio files optimized via a silloutte coefficient to measure the quality of the clusters.
 Data visualization will be done using the matplotlib library and the built-in functionality of Streamlit.
 Our model will be trained on the NSynth dataset containing over 300,000 samples and organized around the instrument being played.
