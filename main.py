@@ -75,8 +75,9 @@ st.write(checkpoint)
 # Your group needs to submit a presentation of your proposal. Please provide us a public link which includes a 3 minutes recorded video. I found that OBS Studio and GT subscribed Kaltura are good tools to record your screen. Please make your visuals are clearly visible in your video presentation.
 # 3 MINUTE is a hard stop. We will NOT accept submissions which are 3 minutes and one second or above. Conveying the message easily while being concise is not easy and it is a great soft skill for any stage of your life, especially your work life.
 st.header('Presentation')
-st.video('https://www.youtube.com/watch?v=LXb3EKWsInQ')
-st.markdown('[Presentation Link](https://www.youtube.com/watch?v=LXb3EKWsInQ)')
+st.video('https://youtu.be/HjY5fkp9aiw')
+st.markdown('[Video Link](https://youtu.be/HjY5fkp9aiw)')
+st.markdown('[Slides Link](https://docs.google.com/presentation/d/1jdO9zwQNaCHwXmeDMgxfeWpnSxTNvJAb6rdTWqieLiE/edit?usp=sharing)')
 
 st.write('Graded Word Count: ' + str(len((introduction + problem_definition + methods + potential_results_and_discussion).split())))
 
