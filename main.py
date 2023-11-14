@@ -47,27 +47,27 @@ mid.header('Results and Discussion')
 results_and_discussion1 = 'To evaluate our models, we compared the predicted instrument labels to the ground truth labels in the NSynth test set. The models output a probability distribution over the 11 instrument types. To generate the final predicted label, we selected the instrument class with the highest probability.'
 mid.write(results_and_discussion1)
 
-mid.image("figure1.png", caption='Figure 1: Categorical entropy loss over 10 epochs for the 1D Model', use_column_width=True)
+mid.image("Figure1.png", caption='Figure 1: Categorical entropy loss over 10 epochs for the 1D Model', use_column_width=True)
 
 results_and_discussion2 = 'Categorical cross-entropy loss was used to optimize the models, measuring the divergence between the predicted class probabilities and the ground truth one-hot labels. As seen in the training loss curve (Figure 1), the model was able to gradually minimize categorical cross-entropy loss over 10 epochs, indicating the model was steadily learning to produce probabilities closer to the true instrument labels. However, the validation loss leveled off before reaching zero, a sign of potential overfitting. There is room to further reduce loss with additional training data and regularization techniques.'
 mid.write(results_and_discussion2)
 
-mid.image("figure2.png", caption='Figure 2: Confusion matrix, recall, precision, and values needed for accuracy calculation', use_column_width=True)
+mid.image("Figure2.png", caption='Figure 2: Confusion matrix, recall, precision, and values needed for accuracy calculation', use_column_width=True)
 
 results_and_discussion3 = "When we evaluate accuracy based on correct identification within the first guess, our 1D CNN model for direct audio sample classification is able to achieve a 83.6% accuracy on the NSynth test set, with a batch size of 10,000. However it should be noted that this evaluation is influenced by the high number of true negative values that we have in the accuracy calculation, since the model will always be successful in correctly refuting a large number of the possible instruments, regardless of whether its single prediction is correct. Considering this fact, it may be more appropriate to evaluate the success of our model by looking at the values for recall and specificity (Figure 2). From these values, we can see that there are still things to be improved in our model."
 mid.write(results_and_discussion3)
 
-mid.image("figure3.png", caption='Figure 3: Categorical entropy loss over 10 epochs for the 1D and 2D Model', use_column_width=True)
+mid.image("Figure3.png", caption='Figure 3: Categorical entropy loss over 10 epochs for the 1D and 2D Model', use_column_width=True)
 
 results_and_discussion4 = 'Transitioning from the 1D to the 2D convolutional neural network architecture dramatically improved model performance. By supplying spectrogram images as input instead of raw audio waveforms, the 2D CNN could learn more complex features for discriminating between instrument types, improving the ability to learn more effectively, as shown by the loss curve (Figure 2), additional convolutional layers continued to reduce loss over 10 epochs.'
 mid.write(results_and_discussion4)
 
-mid.image("figure4.png", caption='Figure 4: An example of the visual spectrogram generated from one of the 1D waveforms', use_column_width=True)
+mid.image("Figure4.png", caption='Figure 4: An example of the visual spectrogram generated from one of the 1D waveforms', use_column_width=True)
 
 results_and_discussion5 = 'Spectrograms provide a visual representation of the frequency content of audio signals over time. By transforming the raw 1D waveform into a 2D image encoding the time-frequency spectrum, critical qualities of timbre and harmony are revealed (Figure 4). In particular, the resonant frequencies and overtones unique to each instrument manifest as visual patterns in the spectrogram, which can be used by the model to identify musical patterns in the spectrogram that can be applied to further instrument identification from more qualities, allowing it to become more accurate. '
 mid.write(results_and_discussion5)
 
-mid.image("figure5.png", caption='Figure 5: An example of the internal feature map used to create the spectrogram', use_column_width=True)
+mid.image("Figure5.png", caption='Figure 5: An example of the internal feature map used to create the spectrogram', use_column_width=True)
 
 results_and_discussion6 = 'Qualitatively, we can see the 2D CNN learned a better representation by visualizing its internal feature maps (Figure 5). The first convolutional layer filters detect low-level patterns in the spectrograms, while deeper layers respond to higher-level features like harmonics and timbre. In direct comparison, the 1D model lacks this hierarchical feature learning.'
 mid.write(results_and_discussion6)
