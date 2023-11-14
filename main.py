@@ -28,7 +28,7 @@ mid.markdown(
 
 # Problem definition: 
 mid.header('Problem Definition')
-problem_definition = 'Before we send the data through our models, we first preprocess them by normalizing the frequency values in each randomly selected audio file from the dataset, mapping the original range of [-1, 1] to [0, 1]. Then we run the PCA algorithm to reduce the features of the dataset to make the training easier. Both of these are primarily done before training in our first model, however for our second iteration of the model, we add the additional step of converting the audio files to a spectrogram representation.'
+problem_definition = 'The main problem we are aiming to solve is the ability to identify a musical instrument through an audio file sample. One main issue for many artists and music producers and editors is the inability for them to edit or isolate specific tracks of popular songs that they want to edit, remix, sample or alter to meet their needs. This Ai model could potentially be adapted to identify instruments and their notes and aid artists and production software in isolating instruments and tracks from the rest of the song so that songs may be deconstructed to allow for editing and creating new songs based on preexisting tracks and popular media. This could further be used to generate sheet music based on a song playing, especially if that song is lost media and the original files are lost. This model could then reconstruct that music to be learned and reused in the future.'
 mid.write(problem_definition)
 
 # Methods:
