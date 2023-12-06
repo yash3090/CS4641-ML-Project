@@ -110,12 +110,12 @@ fin.markdown('[Timeline Link](https://docs.google.com/spreadsheets/d/14jc8INAYUF
 
 # A contribution table with all group members’ names that explicitly provides the contribution of each member in preparing the project task. This part does NOT count towards word limit.
 fin.header('Contribution Table')
-fin.image("contributiontable.png", caption='Contribution Table', use_column_width=True)
+fin.image("final_report/contribution.png", caption='Contribution Table', use_column_width=True)
 fin.markdown('[Contribution Link](https://docs.google.com/spreadsheets/d/1ErVX2eNvhlxeY7ajNCB5KscghvE8iW3X/edit?usp=sharing&ouid=106392410827909927826&rtpof=true&sd=true)')
 
 fin.header('Presentation')
-fin.video('https://youtu.be/HjY5fkp9aiw')
-fin.markdown('[Video Link](https://youtu.be/HjY5fkp9aiw)')
+fin.video('https://www.youtube.com/watch?v=j2-8w52dzVs')
+fin.markdown('[Video Link](https://www.youtube.com/watch?v=j2-8w52dzVs)')
 # fin.markdown('[Slides Link](https://docs.google.com/presentation/d/1jdO9zwQNaCHwXmeDMgxfeWpnSxTNvJAb6rdTWqieLiE/edit?usp=sharing)')
 
 
